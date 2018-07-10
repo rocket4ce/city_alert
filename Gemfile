@@ -38,6 +38,7 @@ gem 'devise'
 gem 'cancan' # or cancancan
 gem 'draper'
 gem 'pundit'
+gem 'activeadmin_latlng'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
