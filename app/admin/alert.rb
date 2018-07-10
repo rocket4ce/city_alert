@@ -13,11 +13,10 @@ ActiveAdmin.register Alert do
 # end
   form do |f|
     f.inputs do
-
       f.input :latitude
       f.input :longitude
       f.input :imagen, :as => :file, :hint => image_tag(f.object.imagen.url)
-      f.latlng lang: :ru, map: :google, height: 500, loading_map: false, api_key_env: 'AIzaSyBuyw4RZd7ORJjyPtCfLBH3kzThgp3eYqw'
+      f.latlng lang: :ru, map: :google, height: 500, id_lat: f.object.latitude, id_lng: f.object.longitude, loading_map: false, api_key_env: 'AIzaSyBuyw4RZd7ORJjyPtCfLBH3kzThgp3eYqw'
     end
     f.actions
   end
