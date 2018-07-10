@@ -19,7 +19,7 @@ class Api::AlertsController < ApplicationController
 
   private
     def set_action
-      @alerta = Alerta.find(params[:id])
+      @alerta = Alert.find(params[:id]) 
     end
 
     def alerta_params
